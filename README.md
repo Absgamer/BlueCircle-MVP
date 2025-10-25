@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BlueCircle Connect
+
+**Connecting Stories, Data & Awareness**
+
+## Mission
+To raise global awareness about diabetes using clear information, interactive charts, and user-friendly tools like a BMI calculator and health quizzes.
+
+---
+
+**Creator:**
+Abhimanyu Chaudhary  
+Founder, Developer & Researcher
+
+Inspired by his research published in the National High School Journal of Science on diabetes prevalence and comorbidities, Abhimanyu created BlueCircle Connect to make science approachable, visual, and accessible.
+
+---
+
+## Tech Stack
+- Next.js (React framework)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui (for beautiful UI components)
+- Framer Motion (animations)
+- Lucide React (icons)
+
+---
+
+## Project Structure
+```
+src/
+├── app/                   # App routing (Home, Tools, Visualizations, About)
+├── components/
+│   ├── ui/                # Reusable UI elements (Button, etc.)
+│   └── blocks/            # Full-page sections (HeroSection, Footer, etc.)
+├── lib/                   # Utilities (e.g., cn())
+├── data/                  # Static data (CSV or JSON files)
+```
+
+---
+
+## Pages
+| Route              | Description                                                      |
+|--------------------|------------------------------------------------------------------|
+| `/`                | Homepage: introduces diabetes, quick facts, action buttons        |
+| `/visualizations`  | Charts & graphs showing real-world diabetes data                 |
+| `/tools`           | BMI calculator and diabetes knowledge quiz                       |
+| `/about`           | Project background, founder story, research, vision              |
+
+---
+
+## Tools and Features
+- Interactive Hero Section with scroll animation
+- BMI Calculator that gives live feedback
+- Diabetes Quiz with auto-scoring
+- Charts (bar, pie, and line) built using real health data
+- Fully responsive UI (mobile, tablet, desktop)
+
+---
+
+## Development Roadmap
+1. Setup project + install frameworks: Local dev working with home page visible
+2. Build Hero Section: Visually strong homepage
+3. Add chart data: Sample CSV/JSON added to /data
+4. Setup Visualizations page: Static layout for all charts
+5. Add charts (bar, pie, line): Fully working interactive graphs
+6. Create Tools page layout: BMI form + quiz section built
+7. Add BMI + quiz logic: Fully interactive tool functionality
+8. Add footer & polish UI: Consistent design + contact links
+9. Test mobile + accessibility: Works well on all screen sizes
+10. Deploy + write docs: Live site and this file complete
+
+---
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+MIT
